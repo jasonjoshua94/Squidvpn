@@ -234,12 +234,6 @@ rm -f /root/ipsec.sh
 rm -f /root/set-br.sh
 rm -f /root/ohp.sh
 echo "1.2" > /home/ver
-
-echo "echo '              AutoScript By Squidvpn             '" >> .profile
-echo "echo '              TELEGRAM : @SandakanVPNTrickster            '" >> .profile
-echo "echo ''" >> .profile
-echo "echo '       Sila Type: 'menu', untuk ke menu utama      '" >> .profile
-echo "echo ''" >> .profile
 clear
 echo " "
 echo '============================================='
