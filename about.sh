@@ -51,7 +51,7 @@ read -p "               Select an option [1] than press ENTER: :  " Options
 sleep 1
 clear
 case $Options in
-		1
+		1)
 		clear
 		menu
 		exit
