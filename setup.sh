@@ -40,7 +40,7 @@ fi
 echo ''
 clear
 echo ''
-figlet Squidvpn | lolcat
+figlet SQUIDVPN | lolcat
 echo -e "$ORANGE                ⚡ PREMIUM SPEED SCRIPT ⚡     "$NC
 echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "$ORANGE                  Autoscript By Squidvpn"$NC
@@ -141,7 +141,7 @@ if [ -f /home/needupdate ]; then
 red "Your script need to update first !"
 exit 0
 elif [ "$res" = "Permission Accepted..." ]; then
-green "Tahniah! Anda Dibenarkan menggunakan Squidvpn..."
+green "Tahniah! Anda Dibenarkan menggunakan Script SQUIDVPN..."
 sleep 5
 else
 clear
