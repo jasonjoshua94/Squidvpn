@@ -41,15 +41,15 @@ echo ''
 clear
 echo ''
 figlet SQUIDVPN | lolcat
-echo -e "$ORANGE                ⚡ PREMIUM SPEED SCRIPT ⚡     "$NC
+echo -e "$ORANGE       ⚡ PREMIUM SPEED SCRIPT ⚡     "$NC
 echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "$ORANGE                  Autoscript By Squidvpn"$NC
-echo -e "$ORANGE                   NEW FULL VERSION 2022 "$NC
-echo -e "$ORANGE                    CONTACT TELEGRAM"$NC
-echo -e "$ORANGE                       @SandakanVPNTrickster"$NC
+echo -e "$ORANGE        Autoscript By Squidvpn"$NC
+echo -e "$ORANGE        NEW FULL VERSION 2022 "$NC
+echo -e "$ORANGE          CONTACT TELEGRAM"$NC
+echo -e "$ORANGE        @SandakanVPNTrickster"$NC
 echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo ''
-echo -e "$ORANGE                       Tunggu 5 Saat!                       "$NC
+echo -e "$ORANGE          Tunggu 5 Saat!                       "$NC
 echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 sleep 5
 clear
