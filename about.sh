@@ -48,12 +48,12 @@ echo -e "\e[93m        .----------------------------------------------------.   
 echo -e "\e[93m        |             Script status : Premium                |             "
 echo -e "\e[93m        '----------------------------------------------------'             "
 read -p "               Select an option [1] than press ENTER: :  " Options
-sleep 1
 clear
 case $Options in
 		1)
-		clear
 		menu
-		exit
 		;;
-	esac
+	*)
+echo ""
+;;
+esac
