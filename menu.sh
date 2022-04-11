@@ -143,7 +143,7 @@ echo -e "$green City                 :$CYAN $CITY"$NC
 echo -e "$green SERVER               :$CYAN $ISP"$NC
 echo -e "$green Client Name          :$CYAN $name${NC}"
 echo -e "$green Expired Date         :$CYAN $exp${NC}"
-echo -e "$green Provided By          :$CYAN @anakjati567"$NC
+echo -e "$green Provided By          :$CYAN @SandakanVPNTrickster"$NC
 echo -e "$green Script Version       :$CYAN $Sver"
 echo -e "${green}════════════════════════════════════════════════════════════${NC}"
 echo -e "${BGBLUE}                     [ MAIN MENU ]                          ${NC}"
