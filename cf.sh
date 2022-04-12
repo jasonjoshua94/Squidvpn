@@ -5,7 +5,7 @@ sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
 SUB_DOMAIN=${sub}.squidvpn.xyz
 WILDCARD=*.${sub}.squidvpn.xyz
 CF_ID=namakunajier@gmail.com
-CF_KEY=7e45e2b33b538a5cd5837d41f2ae92e5
+CF_KEY=a98cb20f3050599a7f566ebb1b58ee67739ab
 set -euo pipefail
 IP=$(wget -qO- https://icanhazip.com);
 echo "Updating DNS for ${SUB_DOMAIN}..."
