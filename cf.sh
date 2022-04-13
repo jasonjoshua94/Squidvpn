@@ -1,9 +1,9 @@
 #!/bin/bash
 apt install jq curl -y
-DOMAIN=for-reseller.store
+DOMAIN=squidvpn.tech
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
-SUB_DOMAIN=${sub}.for-reseller.store
-WILDCARD=*.${sub}.for-reseller.store
+SUB_DOMAIN=${sub}.squidvpn.tech
+WILDCARD=*.${sub}.squidvpn.tech
 CF_ID=namakunajier@gmail.com
 CF_KEY=a98cb20f3050599a7f566ebb1b58ee67739ab
 set -euo pipefail
