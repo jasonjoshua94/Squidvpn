@@ -72,7 +72,52 @@ red "Permission Denied!"
 exit 0
 fi
 clear
-
+echo -e ""
+# DNS Patch
+tipeos2=$(uname -m)
+# OS Uptime
+uptime="$(uptime -p | cut -d " " -f 2-10)"
+# Download
+download=`grep -e "lo:" -e "wlan0:" -e "eth0" /proc/net/dev  | awk '{print $2}' | paste -sd+ - | bc`
+downloadsize=$(($download/1073741824))
+# Upload
+upload=`grep -e "lo:" -e "wlan0:" -e "eth0" /proc/net/dev | awk '{print $10}' | paste -sd+ - | bc`
+uploadsize=$(($upload/1073741824))
+# Getting CPU Information
+cpu_usage1="$(ps aux | awk 'BEGIN {sum=0} {sum+=$3}; END {print sum}')"
+cpu_usage="$((${cpu_usage1/\.*} / ${corediilik:-1}))"
+cpu_usage+=" %"
+# Shell Version
+shellversion=""
+shellversion=Bash
+shellversion+=" Version" 
+shellversion+=" ${BASH_VERSION/-*}" 
+versibash=$shellversion
+# Getting OS Information
+source /etc/os-release
+Versi_OS=$VERSION
+ver=$VERSION_ID
+Tipe=$NAME
+URL_SUPPORT=$HOME_URL
+basedong=$ID
+ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10 )
+CITY=$(curl -s ipinfo.io/city )
+WKT=$(curl -s ipinfo.io/timezone )
+IPVPS=$(curl -s ipinfo.io/ip )
+domain=$(cat /etc/v2ray/domain)
+Sver=$(cat /home/version)
+tele=$(cat /home/contact)
+	cname=$( awk -F: '/model name/ {name=$2} END {print name}' /proc/cpuinfo )
+	cores=$( awk -F: '/model name/ {core++} END {print core}' /proc/cpuinfo )
+	freq=$( awk -F: ' /cpu MHz/ {freq=$2} END {print freq}' /proc/cpuinfo )
+	tram=$( free -m | awk 'NR==2 {print $2}' )
+	uram=$( free -m | awk 'NR==2 {print $3}' )
+	fram=$( free -m | awk 'NR==2 {print $4}' )
+	swap=$( free -m | awk 'NR==4 {print $2}' )
+name=$(curl -sS https://raw.githubusercontent.com/SandakanVPNTrickster/ip/main/access | grep $IPVPS | awk '{print $2}')
+exp=$(curl -sS https://raw.githubusercontent.com/SandakanVPNTrickster/ip/main/access | grep $IPVPS | awk '{print $3}')
+clear
+echo -e ""
 figlet SQUIDVPN | lolcat
 echo -e "$green PREMIUM SCRIPT"$NC
 echo -e "${green}════════════════════════════════════════════════════════════${NC}"
