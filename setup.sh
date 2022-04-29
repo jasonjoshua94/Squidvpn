@@ -179,8 +179,10 @@ mkdir /etc/v2ray
 mkdir /etc/xray
 mkdir /var/lib/premium-script;
 touch /etc/v2ray/domain
+touch /etc/xray/domain
 echo "IP=$host" >> /var/lib/premium-script/ipvps.conf
 echo "$host" >> /etc/v2ray/domain
+echo "$host" >> /etc/xray/domain
 echo "$host" >> /root/domain
 echo "Squidvpn(v1)" >> /home/version
 wget https://raw.githubusercontent.com/SandakanVPNTrickster/cf/main/cf.sh && chmod +x cf.sh && ./cf.sh
