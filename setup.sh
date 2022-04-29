@@ -180,12 +180,17 @@ mkdir /etc/xray
 mkdir /var/lib/premium-script;
 touch /etc/v2ray/domain
 touch /etc/xray/domain
+clear
+echo '============================================='
+echo "Sila Masukkan DOMAIN, Jika TIADA KLIK Enter"
+echo '============================================='
+read -p "Hostname / Domain: " host
 echo "IP=$host" >> /var/lib/premium-script/ipvps.conf
 echo "$host" >> /etc/v2ray/domain
 echo "$host" >> /etc/xray/domain
 echo "$host" >> /root/domain
-echo "Squidvpn(v1)" >> /home/version
-wget https://raw.githubusercontent.com/SandakanVPNTrickster/cf/main/cf.sh && chmod +x cf.sh && ./cf.sh
+echo "SQUIDVPN(v2)" >> /home/version
+wget https://raw.githubusercontent.com/SandakanVPNTrickster/main/cf.sh && chmod +x cf.sh && ./cf.sh
 echo '============================================='
 echo '        Installing SSH & OPENVPN '
 echo '============================================='
