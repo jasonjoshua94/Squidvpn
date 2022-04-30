@@ -121,20 +121,42 @@ echo -e ""
 figlet SQUIDVPN | lolcat
 echo -e "$green PREMIUM SCRIPT"$NC
 echo -e "${green}════════════════════════════════════════════════════════════${NC}"
-echo -e "${BGBLUE}                     [ VPN MENU ]                          ${NC}"
+echo -e "${BGBLUE}                      SERVER INFORMATION                    ${NC}"
 echo -e "${green}════════════════════════════════════════════════════════════${NC}"
-echo -e "$green (•1) $NC SSH & OPENVPN         $$green (•4) $NC TROJAN "
-echo -e "$green (•2) $NC VMESS & VLESS            $green (•5) $NC WIREGUARDS "
-echo -e "$green (•3) $NC SS & SSR         $$green (•6) $NC L2TP, PPTP, SSTP "
+echo -e "$green CPU Model            :$CYAN $cname"$NC
+echo -e "$green CPU Frequency        :$CYAN $freq MHz"$NC
+echo -e "$green Number Of Cores      :$CYAN $cores"$NC
+echo -e "$green CPU Usage            :$CYAN $cpu_usage"$NC
+echo -e "$green Operating System     :$CYAN "`hostnamectl | grep "Operating System" | cut -d ' ' -f5-`$NC
+echo -e "$green Kernel               :$CYAN `uname -r`"$NC
+echo -e "$green Bash Ver             :$CYAN $versibash"$NC
+echo -e "$green Total Amount Of RAM  :$CYAN $tram MB"$NC
+echo -e "$green Used RAM             :$CYAN $uram MB"$NC
+echo -e "$green Free RAM             :$CYAN $fram MB"$NC
+echo -e "$green System Uptime        :$CYAN $uptime $DF( From VPS Booting )"$NC
+echo -e "$green Download             :$CYAN $downloadsize GB ( From Startup / VPS Booting )"$NC
+echo -e "$green Upload               :$CYAN $uploadsize GB ( From Startup / VPS Booting )"$NC
+echo -e "$green ISP NAME             :$CYAN $ISP"$NC
+echo -e "$green IP VPS               :$CYAN $IPVPS"$NC
+echo -e "$green DOMAIN               :$CYAN $domain"$NC
+echo -e "$green City                 :$CYAN $CITY"$NC
+echo -e "$green SERVER               :$CYAN $ISP"$NC
+echo -e "$green Client Name          :$CYAN $name${NC}"
+echo -e "$green Expired Date         :$CYAN $exp${NC}"
+echo -e "$green Provided By          :$CYAN @anakjati567"$NC
+echo -e "$green Script Version       :$CYAN $Sver"
 echo -e "${green}════════════════════════════════════════════════════════════${NC}"
-echo -e "${BGBLUE}                     [ OTHER MENU ]                          ${NC}"
+echo -e "${BGBLUE}                     [ MAIN MENU ]                          ${NC}"
 echo -e "${green}════════════════════════════════════════════════════════════${NC}"
-echo -e "$green (•7) $NC SYSTEM MENU         $green (•11) $NC INFO SCRIPT AUTO "
-echo -e "$green (•8) $NC CHANGE PORT VPN            $green (•12) $NC CHECK USAGE "
-echo -e "$green (•9) $NC REBOOT VPS         $green (•13) $NC CHECK RUNNING SC "
-echo -e "$green (•10) $NC SERVER INFORMATION "
+echo -e "$green (•1) $NC PANEL SSH & OPENVPN         $green (•7) $NC SYSTEM MENU "
+echo -e "$green (•2) $NC PANEL WIREGUARDS            $green (•8) $NC CHANGE PORT VPN "
+echo -e "$green (•3) $NC PANEL VMESS & VLESS         $green (•9) $NC Info Script Auto "
+echo -e "$green (•4) $NC PANEL TROJAN                $green (10) $NC Check Usage "
+echo -e "$green (•5) $NC PANEL SS & SSR              $green (11) $NC REBOOT VPS "
+echo -e "$green (•6) $NC PANEL L2TP, PPTP, SSTP      $green (12) $NC CHECK RUNNING SC "
 echo -e "${green}════════════════════════════════════════════════════════════${NC}"
 echo -e " PREMIUM SCRIPT VPS BY @SandakanVPNTrickster"
+echo -e " THANK YOU FOR USING SCRIPT BY SQUIDVPN"
 echo -e "${green}════════════════════════════════════════════════════════════${NC}"
 echo -e   ""
 echo -e "[Ctrl + C] For exit from main menu"
@@ -146,16 +168,16 @@ case $menu in
 menu-ssh
 ;;
 2)
-menu-v2ray
+menu-wg
 ;;
 3)
-menu-ssr
+menu-v2ray
 ;;
 4)
 menu-trojan
 ;;
 5)
-menu-wg
+menu-ssr
 ;;
 6)
 menu-pptp
@@ -167,18 +189,15 @@ system-menu
 change-port
 ;;
 9)
-reboot
-;;
-10)
-menu-server
-;;
-11)
 about
 ;;
-12)
+10)
 ram
 ;;
-13)
+11)
+reboot
+;;
+12)
 running
 ;;
 x)
