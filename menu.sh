@@ -118,8 +118,10 @@ name=$(curl -sS https://raw.githubusercontent.com/SandakanVPNTrickster/ip/main/a
 exp=$(curl -sS https://raw.githubusercontent.com/SandakanVPNTrickster/ip/main/access | grep $IPVPS | awk '{print $3}')
 clear
 echo -e ""
-figlet SQUIDVPN | lolcat
-echo -e "$green PREMIUM SCRIPT"$NC
+figlet SANDAKANVPN | lolcat
+echo -e "$green+-+-+-+-+-+-+-+ +-+-+-+ +-+-+-+-+-+-+ +-+-+ +-+-+-+-+-+-+-+-+   "$NC
+echo -e "$green|P|R|E|M|I|U|M| |V|P|N| |C|O|N|F|I|G| |B|Y| |S|Q|U|I|D|V|P|N|   "$NC
+echo -e "$green+-+-+-+-+-+-+-+ +-+-+-+ +-+-+-+-+-+-+ +-+-+ +-+-+-+-+-+-+-+-+   "$NC
 echo -e "${green}════════════════════════════════════════════════════════════${NC}"
 echo -e "${BGBLUE}                      SERVER INFORMATION                    ${NC}"
 echo -e "${green}════════════════════════════════════════════════════════════${NC}"
@@ -143,7 +145,7 @@ echo -e "$green City                 :$CYAN $CITY"$NC
 echo -e "$green SERVER               :$CYAN $ISP"$NC
 echo -e "$green Client Name          :$CYAN $name${NC}"
 echo -e "$green Expired Date         :$CYAN $exp${NC}"
-echo -e "$green Provided By          :$CYAN @anakjati567"$NC
+echo -e "$green Provided By          :$CYAN @SandakanVPNTrickster"$NC
 echo -e "$green Script Version       :$CYAN $Sver"
 echo -e "${green}════════════════════════════════════════════════════════════${NC}"
 echo -e "${BGBLUE}                     [ MAIN MENU ]                          ${NC}"
