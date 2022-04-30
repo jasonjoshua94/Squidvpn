@@ -118,7 +118,7 @@ name=$(curl -sS https://raw.githubusercontent.com/SandakanVPNTrickster/ip/main/a
 exp=$(curl -sS https://raw.githubusercontent.com/SandakanVPNTrickster/ip/main/access | grep $IPVPS | awk '{print $3}')
 clear
 echo -e ""
-figlet SANDAKANVPN | lolcat
+figlet SANDAKAN | lolcat
 echo -e "$green+-+-+-+-+-+-+-+ +-+-+-+ +-+-+-+-+-+-+ +-+-+ +-+-+-+-+-+-+-+-+   "$NC
 echo -e "$green|P|R|E|M|I|U|M| |V|P|N| |C|O|N|F|I|G| |B|Y| |S|Q|U|I|D|V|P|N|   "$NC
 echo -e "$green+-+-+-+-+-+-+-+ +-+-+-+ +-+-+-+-+-+-+ +-+-+ +-+-+-+-+-+-+-+-+   "$NC
