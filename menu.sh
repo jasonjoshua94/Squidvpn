@@ -119,9 +119,7 @@ exp=$(curl -sS https://raw.githubusercontent.com/SandakanVPNTrickster/ip/main/ac
 clear
 echo -e ""
 figlet SANDAKAN | lolcat
-echo -e "$green+-+-+-+-+-+-+-+ +-+-+-+ +-+-+-+-+-+-+ +-+-+ +-+-+-+-+-+-+-+-+   "$NC
-echo -e "$green|P|R|E|M|I|U|M| |V|P|N| |C|O|N|F|I|G| |B|Y| |S|Q|U|I|D|V|P|N|   "$NC
-echo -e "$green+-+-+-+-+-+-+-+ +-+-+-+ +-+-+-+-+-+-+ +-+-+ +-+-+-+-+-+-+-+-+   "$NC
+echo -e "$green PREMIUM SCRIPT"$NC
 echo -e "${green}════════════════════════════════════════════════════════════${NC}"
 echo -e "${BGBLUE}                      SERVER INFORMATION                    ${NC}"
 echo -e "${green}════════════════════════════════════════════════════════════${NC}"
