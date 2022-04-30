@@ -255,7 +255,7 @@ echo ""  | tee -a log-install.txt
 echo "   >>> Service & Port"  | tee -a log-install.txt
 echo "   - OpenSSH                 : 22"  | tee -a log-install.txt
 echo "   - OpenVPN                 : TCP 1194, UDP 2200, SSL 442, OHP 8087"  | tee -a log-install.txt
-echo "   - Stunnel4                : 443, 777"  | tee -a log-install.txt
+echo "   - Stunnel4                : 446, 777"  | tee -a log-install.txt
 echo "   - Dropbear                : 109, 143"  | tee -a log-install.txt
 echo "   - Squid Proxy             : 3128, 8080 (limit to IP Server)"  | tee -a log-install.txt
 echo "   - Badvpn                  : 7100, 7200, 7300"  | tee -a log-install.txt
@@ -271,9 +271,9 @@ echo "   - V2RAY Vmess TLS         : 8443"  | tee -a log-install.txt
 echo "   - V2RAY Vmess None TLS    : 80"  | tee -a log-install.txt
 echo "   - V2RAY Vless TLS         : 2083"  | tee -a log-install.txt
 echo "   - V2RAY Vless None TLS    : 8880"  | tee -a log-install.txt
-echo "   - XRAY DIRECT             : 6769"  | tee -a log-install.txt
-echo "   - XRAY SPLICE             : 6769"  | tee -a log-install.txt
-echo "   - Trojan                  : 2087"  | tee -a log-install.txt
+echo "   - XRAY DIRECT             : 443"  | tee -a log-install.txt
+echo "   - XRAY SPLICE             : 443"  | tee -a log-install.txt
+echo "   - Trojan                  : 8000"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "   >>> Server Information & Other Features"  | tee -a log-install.txt
 echo "   - Timezone                : Asia/Malaysia (UTC +8)"  | tee -a log-install.txt
