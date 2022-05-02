@@ -1,6 +1,4 @@
 #!/bin/bash
-Bold='\e[1m'
-PURPLE='\e[35m'
 Yellow='\e[0;33m'
 green='\e[32m'
 RED='\033[0;31m'
@@ -170,7 +168,7 @@ echo -e "$green (•4) $NC PANEL TROJAN                $green (10) $NC Check Usa
 echo -e "$green (•5) $NC PANEL SS & SSR              $green (11) $NC REBOOT VPS "
 echo -e "$green (•6) $NC PANEL L2TP, PPTP, SSTP      $green (12) $NC CHECK RUNNING SC "
 echo -e ""
-echo -e " [\e[36m•00\e[1m] \e[35mBot Panel\e[1m"
+echo -e "$green (00) $NC Bot Panel"
 echo -e "${green}════════════════════════════════════════════════════════════${NC}"
 echo -e " PREMIUM SCRIPT VPS BY @SandakanVPNTrickster"
 echo -e " THANK YOU FOR USING SCRIPT BY SQUIDVPN"
