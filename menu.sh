@@ -1,4 +1,6 @@
 #!/bin/bash
+Bold='\e[1m'
+PURPLE='\e[35m'
 Yellow='\e[0;33m'
 green='\e[32m'
 RED='\033[0;31m'
@@ -117,6 +119,19 @@ tele=$(cat /home/contact)
 name=$(curl -sS https://raw.githubusercontent.com/SandakanVPNTrickster/ip/main/access | grep $IPVPS | awk '{print $2}')
 exp=$(curl -sS https://raw.githubusercontent.com/SandakanVPNTrickster/ip/main/access | grep $IPVPS | awk '{print $3}')
 clear
+
+Exp=$(curl -sS https://raw.githubusercontent.com/irwanmohi/xbot//main/skkkk | grep $MYIP | awk '{print $3}')
+
+chck_b(){
+	PID=`ps -ef |grep -v grep | grep scvps_bot |awk '{print $2}'`
+	if [[ ! -z "${PID}" ]]; then
+			sts="\033[0;32m◉ \033[0m"
+		else
+			sts="\033[1;31m○ \033[0m"
+    fi
+}
+chck_b
+clear
 echo -e ""
 figlet SANDAKAN | lolcat
 echo -e "$green PREMIUM SCRIPT"$NC
@@ -154,6 +169,8 @@ echo -e "$green (•3) $NC PANEL VMESS & VLESS         $green (•9) $NC Info Sc
 echo -e "$green (•4) $NC PANEL TROJAN                $green (10) $NC Check Usage "
 echo -e "$green (•5) $NC PANEL SS & SSR              $green (11) $NC REBOOT VPS "
 echo -e "$green (•6) $NC PANEL L2TP, PPTP, SSTP      $green (12) $NC CHECK RUNNING SC "
+echo -e ""
+echo -e " [\e[36m•00\e[1m] \e[35mBot Panel\e[1m"
 echo -e "${green}════════════════════════════════════════════════════════════${NC}"
 echo -e " PREMIUM SCRIPT VPS BY @SandakanVPNTrickster"
 echo -e " THANK YOU FOR USING SCRIPT BY SQUIDVPN"
@@ -199,6 +216,9 @@ reboot
 ;;
 12)
 running
+;;
+00)
+installbot
 ;;
 x)
 clear
